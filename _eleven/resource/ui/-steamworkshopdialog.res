@@ -6,7 +6,8 @@
 
 //#base "../#jofre/nobar.res"		//always activated
 //#base "../#jofre/safe-mode.res"
-
+#base "../ui2/polybar_1.res"
+#base "../ui2/mm_topbar.res"
 "Resource/SteamWorkshopDialog.res"
 
 {
@@ -14,7 +15,7 @@
 	{
 		"ControlName"	"CSteamWorkshopDialog"
 		"fieldName"		"SteamWorkshopDialog"
-		"xpos"			"0"  // def
+//		"xpos"			"0"  // def
 		"ypos"			"0"	// disabled
 		"zpos"			"10000"
 		"wide"			"f0"	// disabled
@@ -26,79 +27,21 @@
 		"tabPosition"		"0"
 		"bgcolor_override"	"Blank"
 	}
-		"Windows_Notification"
-		{
-			"ControlName"	"EditablePanel"
-			"fieldName"		"Windows_Notification"
-			"xpos"		"cs-0.5"
-			"ypos"		"cs-0.5"
-
-			"wide"		"400"	
-			"tall"		"200"	
-
-			"PaintBackgroundType"	"0"
-			"paintbackground"		"1"
-			"mouseInputenabled"	"0"
-			"border"		"Rice2"			
-			"bgcolor_override"				"56 60 75 255"
-
-			"title"		
-			{
-				ControlName				Label
-				FieldName				"title"
-				xPos					5
-				yPos					5
-				wide					400
-				tall					20	
-				font					"HudGiantBold"
-				fgcolor_override		"255 255 255 255"
-				labelText				"Welcome to Jofre Hud: Windows 11 Edition!"
-				textAlignment			center
-			}
-			"title3"		
-			{
-				ControlName				Label
-				FieldName				"title3"
-				xPos					5
-				yPos					170
-				wide					400
-				tall					20	
-				font					"HudGiantBold"
-				fgcolor_override	"255 255 255 255"
-				labelText				"Click anywhere to close this window."
-				textAlignment			center
-			}			
-			"title2"		
-			{
-				ControlName				Label
-				FieldName				"title2"
-				xPos					5
-				yPos					15
-				wide					395
-				tall					100	
-				font					"HudGiantBold"
-				fgcolor_override		"255 255 255 255"
-				labelText				"By using this HUD you agree that you are a TESTER for this HUD. And you will encounter BUGS. This HUD ISNT MADE for competitive. Im not responsible if you have a bad experience."
-				textAlignment			center
-				"centerwrap"	"1"
-			}			
-	}
-	"Container"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"Container"
-		"xpos"		"0"
-		"ypos"		"0"
-		"zpos"		"10"
-		"wide"		"0"
-	}					
 	"ClickAway1"
 	{
 			"ControlName"	"CExImageButton"
 			"fieldName"		"ClickAway1"
 			"zpos"			"0"
+			//"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			//"enabled"		"1"
+			"tabPosition"	"0"
 			"font"			"Blank"
 			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"0"
 			"actionsignallevel"	"2"
 
 			xPos					0
